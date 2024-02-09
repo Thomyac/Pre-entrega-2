@@ -26,10 +26,6 @@ body {
 /* estilos header */
 
 
-.header .container-fluid{
-
-}
-
 .header .container-fluid a img{
     width: 150px;
 }
@@ -65,11 +61,6 @@ body {
 }
 
 /* estilos index */
-
-.main {
-    
-
-}
 
 .banner {
     margin: 5em;
@@ -399,13 +390,6 @@ body {
     }
     
     /* servicios */
-    .contenedor2{
-
-    }
-
-    .contenedor2 .titulo2{
-
-    }
 
     .contenedor2 .infoimg{
         display: grid;
@@ -415,13 +399,6 @@ body {
 
 
     /* precio */
-    .contenedor{
-
-    }
-
-    .contenedor .titulo3{
-
-    }
     
     .contenedor .container{
         display: grid;
@@ -493,11 +470,7 @@ body {
     }
 
     /* Servicios */
-
-    .contenedor2{
-        
-    }
-
+    
     .infoimg{
         display: flex;
     }
