@@ -5,38 +5,36 @@
     padding: 0;
     box-sizing: border-box;
     color: rgb(255, 255, 255);
+    list-style: none;
 }
 
 /* estilos generales */
 
 body {
     background-color: rgb(0, 0, 0);
+    text-transform: capitalize;
+    font-family: sans-serif;
 
 }
 
 .body{
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(39, 0, 0);
 }
 
 /* estilos mobile */
 
 /* estilos header */
 
-.encabezado {
-    flex-direction: column;
-    background-color: rgb(39, 0, 0);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    box-shadow: 0px 2px 4px;
+
+.header .container-fluid{
+
 }
 
-.encabezado .logo {
+.header .container-fluid a img{
     width: 150px;
 }
 
-.encabezado nav ul {
+.header ul {
     display: flex;
     padding: 10px;
     flex-direction: column;
@@ -69,9 +67,6 @@ body {
 /* estilos index */
 
 .main {
-    padding: 1em;
-    background-color: rgb(39, 0, 0);
-    margin: 10px;
     
 
 }
@@ -133,12 +128,13 @@ body {
 }
 
 .contenedor1 .titulo{
+    margin-top: 15px;
     text-align: center;
     font-size: 1.5em;
 }
 
 .contenedor1 .info{
-    margin-top: 10px;
+    margin-top: 5px;
     display: flex;
     flex-direction: column;
     padding: .2em;
@@ -148,7 +144,7 @@ body {
 
 .contenedor1 .info p{
     margin: 10px;
-    font-size: 1.2em;
+    font-size: 1em;
 }
 
 .contenedor1 .contenedorsobremi{
@@ -281,29 +277,60 @@ body {
 
 /* estilo de footer */
 
-footer {
-    width: 100%;
-    text-align: center;
-    padding: 1rem 15%;
-    color: rgb(255, 255, 255);
+.footer{
+    background-color: rgb(29, 29, 29);
+    padding: 50px;
+}
+
+.footer-row{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    flex-wrap: wrap;
 }
 
-footer .iconos {
-    padding: 10px;
-
+.footer-links{
+    width: 25%;
+    padding: 0 15px;
 }
 
-footer .iconos a {
+.footer-links h4{
+    font-size: 20px;
+    color: white;
+    margin-bottom: 25px;
+    font-weight: 500;
+    border-bottom: 2px solid #ff0000;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+.footer-links ul li a{
+    font-size: 18px;
     text-decoration: none;
-    transition: all 1s ease;
+    color: rgb(166, 166, 166);
+    display: block;
+    margin-bottom: 15px;
+    transition: all .3s ease;
 }
 
-footer .iconos a:hover {
-    border-bottom: 1px solid rgb(255, 0, 0);
+.footer-links ul li a:hover{
+    color: white;
+    padding-left: 6px;
+}
+
+.social-link a{
+    display: inline-block;
+    min-height: 40px;
+    width: 40px;
+    background-color: rgb(55, 55, 55);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #FFFFFF;
+    transition: all .5s ease;
+}
+
+.social-link a:hover{
+    background-color: red;
 }
 
 /* mq tablet */
@@ -370,6 +397,36 @@ footer .iconos a:hover {
     .contenedor1 .contenedorsobremi img{
         width: 80%;
     }
+    
+    /* servicios */
+    .contenedor2{
+
+    }
+
+    .contenedor2 .titulo2{
+
+    }
+
+    .contenedor2 .infoimg{
+        display: grid;
+        grid-template-columns: repeat(5, 300px);
+        
+    }
+
+
+    /* precio */
+    .contenedor{
+
+    }
+
+    .contenedor .titulo3{
+
+    }
+    
+    .contenedor .container{
+        display: grid;
+        grid-template-columns: repeat(4, 350px);
+    }
 
 }
 
@@ -427,12 +484,22 @@ footer .iconos a:hover {
     }
 
     .contenedor1 .info .info1{
-        font-size: 1.3em;
+        font-size: 1em;
         width: 60%;
     }
 
     .contenedor1 .contenedorsobremi img{
         width: 45%;
+    }
+
+    /* Servicios */
+
+    .contenedor2{
+        
+    }
+
+    .infoimg{
+        display: flex;
     }
 
     /* formulario */
@@ -445,5 +512,16 @@ footer .iconos a:hover {
         position: relative;
         left: 0;
         bottom: 0;
+    }
+}
+
+@media(max-width:991px){
+    .footer-row{
+        text-align: center;
+    }
+
+    .footer-links{
+        width: 100%;
+        margin-bottom: 30px;
     }
 }
