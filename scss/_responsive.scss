@@ -1,0 +1,168 @@
+/* mq tablet */
+
+@media (min-width: 768px) {
+
+    /* estilos  header */
+
+    .encabezado nav ul {
+        flex-direction: row;
+    }
+
+    .contacto {
+        height: 80vh;
+    }
+
+    /* estilos del index */
+
+    .banner {
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .banner h1 {
+        font-size: 2.2em;
+    }
+
+    .banner .Asesoramiento {
+        font-size: 1.8em;
+    }
+
+    .banner p {
+        font-size: 1.5em;
+    }
+
+    .banner .boton a {
+        width: 45%;
+        padding: 20px;
+        border-radius: 20px;
+    }
+
+    /* estilos sobre mi */
+
+    .contenedor1 {
+        grid-template-columns: repeat(2, minmax(200px, 1fr));
+        grid-template-rows: 10px 40% 50%;
+    }
+
+    .contenedor1 .titulo {
+        grid-column: span 2;
+    }
+
+    .contenedor1 .info {
+        grid-column: span 2;
+        margin-top: 50px;
+    }
+
+    .contenedor1 .contenedorsobremi {
+        grid-column: span 2;
+    }
+
+    .contenedor1 .contenedorsobremi img {
+        width: 80%;
+    }
+
+    /* servicios */
+
+    .contenedor2 .infoimg {
+        display: grid;
+        grid-template-columns: repeat(5, 300px);
+
+    }
+
+
+    /* precio */
+
+    .contenedor .container {
+        display: grid;
+        grid-template-columns: repeat(4, 350px);
+    }
+
+}
+
+/* mq desktop */
+
+@media (min-width: 1024px) {
+
+    /* estilo header */
+
+    .encabezado {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .encabezado nav {
+        margin-left: 20%;
+    }
+
+    /* estilo index */
+
+    .main {
+        height: 80vh;
+    }
+
+    .banner {
+        height: 60vh;
+    }
+
+    .banner h1 {
+        font-size: 6em;
+    }
+
+    .banner .Asesoramiento {
+        font-size: 2.5em;
+    }
+
+    .banner p {
+        font-size: 2em;
+    }
+
+    .banner .boton a {
+        display: flex;
+        justify-content: center;
+        width: 25%;
+        padding: 10px;
+        margin: 10px;
+        font-size: 2em;
+    }
+
+    /* estilos sobre mi */
+
+    .contenedor1 {
+        grid-template-columns: repeat(2, minmax(200px, 1fr));
+        grid-template-rows: 10px 47% 45%;
+    }
+
+    .contenedor1 .info .info1 {
+        font-size: 1.3em;
+        width: 60%;
+    }
+
+    .contenedor1 .contenedorsobremi img {
+        width: 45%;
+    }
+
+    /* formulario */
+
+    .formulario {
+        padding: 150px;
+    }
+
+    footer {
+        position: relative;
+        left: 0;
+        bottom: 0;
+    }
+}
+
+@media(max-width:991px) {
+    .footer-row {
+        text-align: center;
+    }
+
+    .footer-links {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}

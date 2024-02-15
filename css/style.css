@@ -1,0 +1,351 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: rgb(255, 255, 255);
+  list-style: none;
+}
+
+body {
+  background-color: rgb(0, 0, 0);
+  text-transform: capitalize;
+  font-family: sans-serif;
+}
+
+.body {
+  background-color: rgb(53, 0, 0);
+}
+
+.header .container-fluid a img {
+  width: 150px;
+}
+
+.contenedor1 {
+  width: 100%;
+  display: grid;
+  grid-template-rows: 50px 65% 25%;
+  gap: 5px;
+  height: 100vh;
+}
+.contenedor1 .titulo {
+  text-align: center;
+  font-size: 1.5em;
+}
+.contenedor1 .info {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 0.2em;
+  justify-content: center;
+  align-items: center;
+}
+.contenedor1 .info p {
+  margin: 10px;
+  font-size: 1.2em;
+}
+.contenedor1 .contenedorsobremi {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contenedor1 .contenedorsobremi img {
+  width: 80%;
+}
+
+.contenedor2 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.contenedor2 .titulo2 {
+  text-align: center;
+  font-size: 2em;
+}
+.contenedor2 .subtitulo {
+  text-align: center;
+  font-size: 1em;
+}
+.contenedor2 .info2 {
+  text-align: center;
+  align-items: center;
+  margin-top: 10px;
+  padding: 0.2em;
+}
+
+.contenedor {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.contenedor .titulo3 {
+  text-align: center;
+  font-size: 1.5em;
+  margin: 10px;
+}
+.contenedor .container {
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+}
+.contenedor .container .columna {
+  border: 2px solid white;
+  padding: 1.5em;
+}
+.contenedor .container .columna h2 {
+  padding: 10px;
+  text-align: center;
+  font-size: 2rem;
+  border-bottom: 2px solid rgb(255, 0, 0);
+  margin-bottom: 10px;
+}
+.contenedor .container .columna .Precio {
+  text-align: center;
+  padding: 20px;
+  font-size: 1.5em;
+  margin-bottom: 1.5px;
+}
+.contenedor .container .columna ul {
+  list-style: none;
+  text-align: center;
+  gap: 20px;
+}
+.contenedor .container .columna ul li {
+  margin: 5px;
+  font-size: 1.3em;
+}
+.contenedor .container .columna .botonprecio {
+  display: flex;
+  justify-content: center;
+}
+.contenedor .container .columna .botonprecio a {
+  border: 2px solid rgb(255, 0, 0);
+  padding: 10px 40px;
+  margin: 10px;
+  box-shadow: 1px 2px white;
+  border-radius: 10px;
+}
+
+.footer {
+  background-color: rgb(29, 29, 29);
+  padding: 50px;
+}
+
+.footer-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-links {
+  width: 20%;
+  padding: 0 15px;
+}
+.footer-links h4 {
+  display: inline-block;
+  font-size: 1.5em;
+  color: white;
+  margin-bottom: 20px;
+  font-weight: 500;
+  border-bottom: 2px solid #ff0000;
+  padding-bottom: 10px;
+}
+.footer-links ul li a {
+  font-size: 18px;
+  text-decoration: none;
+  color: rgb(166, 166, 166);
+  display: block;
+  margin-bottom: 15px;
+  transition: all 0.3s ease;
+}
+.footer-links ul li a:hover {
+  color: white;
+  padding-left: 6px;
+}
+
+.social-link a {
+  display: inline-block;
+  min-height: 40px;
+  width: 40px;
+  background-color: rgb(55, 55, 55);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #FFFFFF;
+  transition: all 0.5s ease;
+}
+.social-link a:hover {
+  background-color: red;
+}
+
+/* mq tablet */
+@media (min-width: 768px) {
+  /* estilos  header */
+  .encabezado nav ul {
+    flex-direction: row;
+  }
+  .contacto {
+    height: 80vh;
+  }
+  /* estilos del index */
+  .banner {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .banner h1 {
+    font-size: 2.2em;
+  }
+  .banner .Asesoramiento {
+    font-size: 1.8em;
+  }
+  .banner p {
+    font-size: 1.5em;
+  }
+  .banner .boton a {
+    width: 45%;
+    padding: 20px;
+    border-radius: 20px;
+  }
+  /* estilos sobre mi */
+  .contenedor1 {
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+    grid-template-rows: 10px 40% 50%;
+  }
+  .contenedor1 .titulo {
+    grid-column: span 2;
+  }
+  .contenedor1 .info {
+    grid-column: span 2;
+    margin-top: 50px;
+  }
+  .contenedor1 .contenedorsobremi {
+    grid-column: span 2;
+  }
+  .contenedor1 .contenedorsobremi img {
+    width: 80%;
+  }
+  /* servicios */
+  .contenedor2 .infoimg {
+    display: grid;
+    grid-template-columns: repeat(5, 300px);
+  }
+  /* precio */
+  .contenedor .container {
+    display: grid;
+    grid-template-columns: repeat(4, 350px);
+  }
+}
+/* mq desktop */
+@media (min-width: 1024px) {
+  /* estilo header */
+  .encabezado {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .encabezado nav {
+    margin-left: 20%;
+  }
+  /* estilo index */
+  .main {
+    height: 80vh;
+  }
+  .banner {
+    height: 60vh;
+  }
+  .banner h1 {
+    font-size: 6em;
+  }
+  .banner .Asesoramiento {
+    font-size: 2.5em;
+  }
+  .banner p {
+    font-size: 2em;
+  }
+  .banner .boton a {
+    display: flex;
+    justify-content: center;
+    width: 25%;
+    padding: 10px;
+    margin: 10px;
+    font-size: 2em;
+  }
+  /* estilos sobre mi */
+  .contenedor1 {
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+    grid-template-rows: 10px 47% 45%;
+  }
+  .contenedor1 .info .info1 {
+    font-size: 1.3em;
+    width: 60%;
+  }
+  .contenedor1 .contenedorsobremi img {
+    width: 45%;
+  }
+  /* formulario */
+  .formulario {
+    padding: 150px;
+  }
+  footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+  }
+}
+@media (max-width: 991px) {
+  .footer-row {
+    text-align: center;
+  }
+  .footer-links {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+#fondoinicio {
+  background-image: url(../img/fondoinicio.jpg);
+}
+
+.banner {
+  margin: 6em;
+  line-height: 2;
+}
+.banner h1 {
+  font-size: 3em;
+  text-align: center;
+  text-decoration: underline;
+  border-radius: 20px 2px 2px;
+  color: rgb(100, 100, 100);
+}
+.banner .Asesoramiento {
+  font-size: 1.5em;
+}
+.banner p {
+  font-size: 1.3em;
+  text-align: center;
+  margin: 20px 0px;
+  color: white;
+}
+.banner .boton {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.banner .boton a {
+  display: flex;
+  text-decoration: none;
+  border-radius: 15px;
+  border: 2px solid rgb(255, 0, 0);
+  box-shadow: 2px 2px 10px rgb(255, 0, 0);
+  background-color: #1a1a1a;
+  color: white;
+  margin-top: 10px;
+  margin: 10px;
+  padding: 10px;
+}
+
+/*# sourceMappingURL=style.css.map */

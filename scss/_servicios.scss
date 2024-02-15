@@ -1,0 +1,22 @@
+.contenedor2 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    .titulo2 {
+        text-align: center;
+        font-size: 2em;
+    }
+
+    .subtitulo {
+        text-align: center;
+        font-size: 1em;
+    }
+
+    .info2 {
+        text-align: center;
+        align-items: center;
+        margin-top: 10px;
+        padding: .2em;
+    }
+}

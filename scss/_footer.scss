@@ -1,0 +1,55 @@
+.footer {
+    background-color: rgb(29, 29, 29);
+    padding: 50px;
+}
+
+.footer-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-links {
+    width: 20%;
+    padding: 0 15px;
+
+    h4 {
+        display: inline-block;
+        font-size: 1.5em;
+        color: white;
+        margin-bottom: 20px;
+        font-weight: 500;
+        border-bottom: 2px solid #ff0000;
+        padding-bottom: 10px;
+    }
+
+    ul li a {
+        font-size: 18px;
+        text-decoration: none;
+        color: rgb(166, 166, 166);
+        display: block;
+        margin-bottom: 15px;
+        transition: all .3s ease;
+
+        &:hover {
+            color: white;
+            padding-left: 6px;
+        }
+    }
+}
+
+.social-link a {
+    display: inline-block;
+    min-height: 40px;
+    width: 40px;
+    background-color: rgb(55, 55, 55);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #FFFFFF;
+    transition: all .5s ease;
+
+    &:hover {
+        background-color: red;
+    }
+}
