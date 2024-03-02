@@ -1,22 +1,31 @@
-.contenedor2 {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+.container2 {
+    height: 205vh;
+}
 
-    .titulo2 {
-        text-align: center;
-        font-size: 2em;
+.titulo2 h1 {
+    text-align: center;
+    font-size: 2.3em;
+    margin-top: 10px;
+}
+
+.subtitulo {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 1em;
+}
+
+.info2 h2 {
+    text-decoration: underline;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.form {
+    ul li {
+        margin-top: 30px;
     }
 
-    .subtitulo {
-        text-align: center;
-        font-size: 1em;
-    }
-
-    .info2 {
-        text-align: center;
-        align-items: center;
-        margin-top: 10px;
-        padding: .2em;
+    img {
+        width: 100%;
     }
 }

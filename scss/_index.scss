@@ -1,47 +1,36 @@
-#fondoinicio {
-    background-image: url(../img/fondoinicio.jpg);
-}
+.main1 {
+    height: 1vh;
 
-.banner {
-    margin: 6em;
-    line-height: 2;
-
-    h1 {
-        font-size: 3em;
-        text-align: center;
-        text-decoration: underline;
-        border-radius: 20px 2px 2px;
-        color: rgb(100, 100, 100);
+    .bannerh1 {
+        margin-top: 160px;
+        font-size: 3.5em;
+        text-decoration: none;
+        color: #ffffff;
+        background-color: rgb(125, 0, 0);
+        border-radius: 35px;
+        padding: 12px;
     }
 
-    .Asesoramiento {
-        font-size: 1.5em;
-    }
+    .banner {
+        .Asesoramiento {
+            text-align: center;
+            font-size: 1.3em;
+            margin-top: 30px;
+        }
 
-    p {
-        font-size: 1.3em;
-        text-align: center;
-        margin: 20px 0px;
-        color: white;
-    }
-
-    .boton {
-        margin-top: 20px;
-        display: flex;
-        justify-content: center;
-        text-align: center;
-
-        a {
-            display: flex;
-            text-decoration: none;
-            border-radius: 15px;
-            border: 2px solid rgb(255, 0, 0);
-            box-shadow: 2px 2px 10px rgb(255, 0, 0);
-            background-color: #1a1a1a;
-            color: white;
+        h3 {
+            text-align: center;
             margin-top: 10px;
+            font-size: 1em;
             margin: 10px;
-            padding: 10px;
+            padding: 20px;
+        }
+
+        .boton {
+            text-align: center;
+            height: 80px;
+            font-size: 1em;
+            margin-top: 30px;
         }
     }
 }

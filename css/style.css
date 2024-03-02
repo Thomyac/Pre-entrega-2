@@ -23,170 +23,246 @@ body {
   background-attachment: fixed;
 }
 
-.header .container-fluid a img {
-  width: 150px;
-}
+
+
+
+@media screen and (max-width: 480px) {
+  
+  /* header */
+
+  header{
+    width: 100%;
+  }
+
+  .header .container-fluid a img {
+    width: 100px;
+  }
+
+  /* index */
+
+  .main1{
+    height: 1vh;
+  }
+  
+  .main1 .bannerh1 {
+    margin-top: 160px;
+    font-size: 3.5em;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: rgb(125, 0, 0);
+    border-radius: 35px;
+    padding: 12px;
+  }
+  
+  .main1 .banner .Asesoramiento{
+    text-align: center;
+    font-size: 1.3em;
+    margin-top: 30px;
+  }
+
+  .main1 .banner h3{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 1em;
+    margin: 10px;
+    padding: 20px;
+  }
+
+  .main1 .banner .boton{
+    text-align: center;
+    height: 80px;
+    font-size: 1em;
+    margin-top: 30px;
+  }
 
 /* sobre mi */
 
-.contenedor1 {
-  width: 100%;
-  display: grid;
-  grid-template-rows: 50px 65% 25%;
-  gap: 5px;
-  height: 100vh;
+.main{
+  height: 50vh;
+  max-width: 1000px;
+  min-width:320px;
 }
-.contenedor1 .titulo {
+
+.main .contenedor1 .titulo h1{
+  margin-top: 20px;
   text-align: center;
-  font-size: 1.5em;
+  font-size: 2.5em;
 }
-.contenedor1 .info {
-  margin-top: 10px;
-  display: flex;
-  flex-direction: column;
-  padding: 0.2em;
-  justify-content: center;
-  align-items: center;
+.main .contenedor1 .info h4{
+  margin-top: 20px;
+  text-align: center;
+  font-size: 1.2em;
+  
 }
 .contenedor1 .info p {
-  margin: 10px;
-  font-size: 1.2em;
+  text-align: center;
+  font-size: 1em;
+  margin-top: 20px;
 }
-.contenedor1 .contenedorsobremi {
+
+.main .contenedor1 .contenedorsobremi img{
+  margin-top: 70px;
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  border-radius: 100px;
 }
-.contenedor1 .contenedorsobremi img {
-  width: 80%;
+
+#frame{
+  margin-top: 100px;
+  width: 100%;
 }
 
 /* servicios */
 
-.contenedor2 {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+.container2{
+  height: 205vh;
 }
-.contenedor2 .titulo2 {
+
+.titulo2 h1{
   text-align: center;
-  font-size: 2em;
+  font-size: 2.3em;
+  margin-top: 10px;
 }
-.contenedor2 .subtitulo {
+.subtitulo {
+  margin-top: 10px;
   text-align: center;
   font-size: 1em;
 }
-.contenedor2 .info2 {
+
+.info2 h2{
+  text-decoration: underline;
   text-align: center;
-  align-items: center;
-  margin-top: 10px;
-  padding: 0.2em;
+  margin-bottom: 15px;
+  
 }
+.form ul li{
+  margin-top: 30px;
+}
+
+.form img{
+  width: 100%;
+}
+
+
+
 
 /* precio */
 
-.contenedor {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+.main2{
+  height: 220vh;
 }
-.contenedor .titulo3 {
+
+.main2 .contenedor {
+  display: grid;
+  grid-template-columns: repeat(4);
+}
+.main2 .contenedor .titulo3 h1{
   text-align: center;
-  font-size: 1.5em;
-  margin: 10px;
+  font-size: 2.5em;
+  margin-top: 20px;
 }
-.contenedor .container {
-  padding: 2em;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  justify-content: center;
-}
-.contenedor .container .columna {
-  border: 2px solid white;
+
+.main2 .contenedor .container .columna {
+  border: 4px solid rgb(255, 255, 255);
   padding: 1.5em;
+  margin-top: 40px;
+  border-radius: 30px;
 }
-.contenedor .container .columna h2 {
+.main2 .contenedor .container .columna h2 {
   padding: 10px;
   text-align: center;
-  font-size: 2rem;
-  border-bottom: 2px solid rgb(255, 0, 0);
+  font-size: 1.5rem;
+  border-bottom: 4px solid rgb(255, 0, 0);
   margin-bottom: 10px;
 }
-.contenedor .container .columna .Precio {
+.main2 .contenedor .container .columna .Precio {
   text-align: center;
   padding: 20px;
-  font-size: 1.5em;
+  font-size: 2em;
   margin-bottom: 1.5px;
 }
-.contenedor .container .columna ul {
+.main2 .contenedor .container .columna ul {
   list-style: none;
   text-align: center;
   gap: 20px;
 }
-.contenedor .container .columna ul li {
+.main2 .contenedor .container .columna ul li {
   margin: 5px;
-  font-size: 1.3em;
+  margin-top: 10px;
+  font-size: 1.2em;
 }
-.contenedor .container .columna .botonprecio {
+.main2 .contenedor .container .columna .botonprecio {
   display: flex;
   justify-content: center;
 }
 .contenedor .container .columna .botonprecio a {
-  border: 2px solid rgb(255, 0, 0);
+  margin-top: 20px;
+  border: 4px solid rgb(255, 0, 0);
   padding: 10px 40px;
-  margin: 10px;
-  box-shadow: 1px 2px white;
+  box-shadow: 2px 3px rgb(0, 0, 0);
   border-radius: 10px;
+  color: rgb(255, 255, 255);
+  background-color: #2b2b2b;
+  text-decoration: none;
 }
 
 /* contactanos */
 
+.maincontacto{
+  height: 10vh;
+}
 
+.formulario .mb-4{
+  margin-top: 30px;
+  text-align: center;
+}
 
+.formulario .form-group{
+  margin-top: 10px;
+  padding: 10px;
+  width: 350px;
+}
 
 
 /* footer */
 
-.footer {
-  background-color: rgb(29, 29, 29);
-  padding: 50px;
-}
-
-.footer-row {
+.footer{
+  position: absolute;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
 }
 
-.footer-links {
-  width: 20%;
-  padding: 0 15px;
+.footer .container {
+  background-color: rgb(39, 39, 39);
 }
-.footer-links h4 {
+
+.footer .container .footer-links {
+  margin-top: 20px;
+  
+}
+.footer .container .footer-row .footer-links h4 {
   display: inline-block;
-  font-size: 1.5em;
-  color: white;
-  margin-bottom: 20px;
-  font-weight: 500;
-  border-bottom: 2px solid #ff0000;
+  font-size: 2.5em;
+  color: rgb(255, 255, 255);
+  margin-bottom: 10px;
+  border-bottom: 4px solid #ff0000;
   padding-bottom: 10px;
 }
-.footer-links ul li a {
-  font-size: 18px;
+.footer .container .footer-row .footer-links ul li a {
+  display: flex;
+  font-size: 15px;
   text-decoration: none;
-  color: rgb(166, 166, 166);
-  display: block;
-  margin-bottom: 15px;
+  text-align: center;
+  margin: 20px;
+  color: rgb(135, 135, 135);
   transition: all 0.3s ease;
 }
-.footer-links ul li a:hover {
-  color: white;
-  padding-left: 6px;
+.footer .container .footer-row .footer-links ul li a:hover {
+  display: flex;
+  color: rgb(255, 0, 0);
+  padding-left: 10px;
 }
 
-.social-link a {
+.footer .container .footer-row .footer-links .social-link a {
   display: inline-block;
   min-height: 40px;
   width: 40px;
@@ -198,36 +274,37 @@ body {
   color: #FFFFFF;
   transition: all 0.5s ease;
 }
-.social-link a:hover {
+.footer .container .footer-row .footer-links .social-link a:hover {
   background-color: red;
+}
+
 }
 
 /* mq tablet */
 @media (min-width: 768px) {
   /* estilos  header */
-  .encabezado nav ul {
-    flex-direction: wrap;
+
+  .header .container-fluid a img {
+    width: 150px;
   }
-  .contacto {
-    height: 80vh;
-  }
+
   /* estilos del index */
-  .main {
-    height: 50vh;
-  }
-  .banner {
-    height: 50vh;
+
+  
+  .main1 .banner {
+    height: 1vh;
   } 
-  .banner .bannerh1 {
-    font-size: 5em;
-    text-decoration: none;
+  .main1 .bannerh1 {
+    margin-top: 200px;
+    font-size: 7em;
+    text-decoration: underline;
   }
-  .banner .Asesoramiento{
+  .main1 .banner .Asesoramiento{
     text-align: center;
     font-size: 2em;
-    margin-top: 20px;
+    margin-top: 40px;
   }
-  .banner h3{
+  .main1 .banner h3{
     text-align: center;
     margin-top: 30px;
     font-size: 1em;
@@ -236,272 +313,457 @@ body {
     padding: 20px;
   }
 
-  .banner .boton a {
+  .main1 .banner .boton a {
     display: flex;
     justify-content: center;
-    width: 30%;
     padding: 10px;
-    margin: 10px;
+    margin-top: 50px;
+    margin: 20px;
+    padding: 20px;
     font-size: 1em;
   }
   
   /* estilos sobre mi */
-  .contenedor1 {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(200px, 1fr));
-    grid-template-rows: 80px 50% 40%;
+
+  .main{
+    height: 30vh;
+    max-width: 1000px;
+    min-width:320px;
   }
-  .contenedor1 .titulo {
-    grid-column: span 2;
-    margin-top: 10px;
-  }
-  .contenedor1 .info {
-    grid-column: span 2;
-    padding: 10px;
-  }
-  .contenedor1 .contenedorsobremi {
-    grid-column: span 2;
-    padding: 20px;
-  }
-  .contenedor1 .contenedorsobremi img {
-    width: 65%;
-  }
-  /* servicios */
-  .contenedor2 .infoimg {
-    display: grid;
-    grid-template-columns: repeat(5, 300px);
-  }
-  /* precio */
   
-  .contenedor {
+  .main .contenedor1 .titulo h1{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 3em;
+  }
+  .main .contenedor1 .info h4{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1.2em;
+    
+  }
+  .contenedor1 .info p {
+    text-align: center;
+    font-size: 1em;
+    margin-top: 20px;
+  }
+  
+  .main .contenedor1 .contenedorsobremi img{
+    margin-top: 70px;
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+    border-radius: 100px;
   }
-  .contenedor .titulo3 {
-    text-align: center;
-    font-size: 1.5em;
-    margin: 10px;
-  }
-  .contenedor .container {
-    padding: 2em;
-    display: flex;
-    gap: 10px;
-  }
-  .contenedor .container .columna {
-    border: 2px solid white;
-  }
-  .contenedor .container .columna h2 {
-    padding: 10px;
-    text-align: center;
-    font-size: 2rem;
-    border-bottom: 2px solid rgb(255, 0, 0);
-    margin-bottom: 10px;
-  }
-  .contenedor .container .columna .Precio {
-    text-align: center;
-    padding: 20px;
-    font-size: 1.5em;
-    margin-bottom: 1.5px;
-  }
-  .contenedor .container .columna ul {
-    list-style: none;
-    text-align: center;
-    gap: 20px;
-  }
-  .contenedor .container .columna ul li {
-    margin: 5px;
-    font-size: 1.3em;
-  }
-  .contenedor .container .columna .botonprecio {
-    display: flex;
-    justify-content: center;
-  }
-  .contenedor .container .columna .botonprecio a {
-    border: 2px solid rgb(255, 0, 0);
-    padding: 10px 40px;
-    margin: 10px;
-    box-shadow: 1px 2px white;
-    border-radius: 10px;
-  }
-}
-
-/* mq desktop */
-@media (min-width: 1024px) {
-  /* estilo header */
-  .encabezado {
-    flex-direction: row;
-    justify-content: space-around;
-  }
-  .encabezado nav {
-    margin-left: 20%;
-  }
-  /* estilo index */
-  .main {
-    height: 50vh;
-  }
-  .banner {
-    height: 50vh;
-  } 
-  .banner .bannerh1 {
-    font-size: 5em;
-    text-decoration: none;
-  }
-  .banner .Asesoramiento{
-    text-align: center;
-    font-size: 2em;
-    margin-top: 20px;
-  }
-  .banner h3{
-    text-align: center;
-    margin-top: 30px;
-    font-size: 1em;
-    border-radius: 30px;
-    margin: 10px;
-    padding: 20px;
-  }
-
-  .banner .boton a {
-    display: flex;
-    justify-content: center;
-    width: 30%;
-    padding: 10px;
-    margin: 10px;
-    font-size: 1em;
-  }
-
-  /* estilos sobre mi */
-  .contenedor1 {
-    grid-template-columns: repeat(2, minmax(200px, 1fr));
-    grid-template-rows: 10px 47% 45%;
-  }
-  .contenedor1 .info{
-    font-size: 1em;
-    margin-top: 80px;
-  }
-  .contenedor1 .contenedorsobremi img {
-    margin-top: 60px;
-    width: 50%;
+  
+  #frame{
+    margin-top: 100px;
+    width: 100%;
   }
 
   /* servicios */
 
   .container2{
-
-  }
-
-  .container2 .titulo2{
-    text-align: center;
-  }
-
-  .container2 .subtitulo{
-    text-align: center;
-  }
-
-  .form{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-  }
-
-  .info2{
-    
-  }
-
-  .info2 .infoimg{
-    
-  }
-
-  .info2 .infoimg1{
-    width: 1%;
-    height: 1%;
-  }
-
-  .info2 .infoimg2{
-    width: 300px;
-    height: 250px;
+    height: 250vh;
   }
   
-  .info2 .infoimg3{
-    width: 300px;
-    height: 250px;
+  .container2 .titulo2 h1{
+    text-align: center;
+    font-size: 2.5em;
+    margin-top: 10px;
+  }
+  .container2 .subtitulo {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 1em;
+  }
+  
+  .container2 .info2 h2{
+    text-decoration: underline;
+    text-align: center;
+    margin-bottom: 30px;
+    
+  }
+  .form ul li{
+    margin-top: 40px;
+  }
+  
+  .form img{
+    width: 100%;
   }
 
   /* precio */
-
-  .contenedor {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+  
+  .main2{
+    height: 120vh;
   }
-  .contenedor .titulo3 {
+  
+  .main2 .contenedor {
+    display: grid;
+    grid-template-columns: repeat(4);
+  }
+  .main2 .contenedor .titulo3 h1{
     text-align: center;
-    font-size: 1.5em;
-    margin: 10px;
+    font-size: 2.5em;
+    margin-top: 20px;
   }
-  .contenedor .container {
-    padding: 2em;
-    display: flex;
-    gap: 10px;
+  
+  .main2 .contenedor .container .columna {
+    border: 4px solid rgb(255, 255, 255);
+    padding: 1.5em;
+    margin-top: 40px;
+    border-radius: 30px;
   }
-  .contenedor .container .columna {
-    border: 2px solid white;
-  }
-  .contenedor .container .columna h2 {
+  .main2 .contenedor .container .columna h2 {
     padding: 10px;
     text-align: center;
-    font-size: 2rem;
-    border-bottom: 2px solid rgb(255, 0, 0);
+    font-size: 1.5rem;
+    border-bottom: 4px solid rgb(255, 0, 0);
     margin-bottom: 10px;
   }
-  .contenedor .container .columna .Precio {
+  .main2 .contenedor .container .columna .Precio {
     text-align: center;
     padding: 20px;
-    font-size: 1.5em;
+    font-size: 2em;
     margin-bottom: 1.5px;
   }
-  .contenedor .container .columna ul {
+  .main2 .contenedor .container .columna ul {
     list-style: none;
     text-align: center;
     gap: 20px;
   }
-  .contenedor .container .columna ul li {
+  .main2 .contenedor .container .columna ul li {
     margin: 5px;
-    font-size: 1.3em;
+    margin-top: 10px;
+    font-size: 1.2em;
   }
-  .contenedor .container .columna .botonprecio {
+  .main2 .contenedor .container .columna .botonprecio {
     display: flex;
     justify-content: center;
   }
   .contenedor .container .columna .botonprecio a {
-    border: 2px solid rgb(255, 0, 0);
+    margin-top: 20px;
+    border: 4px solid rgb(255, 0, 0);
     padding: 10px 40px;
-    margin: 10px;
-    box-shadow: 1px 2px white;
+    box-shadow: 2px 3px rgb(0, 0, 0);
     border-radius: 10px;
+    color: rgb(255, 255, 255);
+    background-color: #2b2b2b;
+    text-decoration: none;
   }
 
   /* contactanos */
 
-  .container h2{
+  .maincontacto{
+    height: 1vh;
+  }
+  
+  .formulario .mb-4{
+    font-size: 3em;
+    margin-top: 30px;
+    text-align: center;
+  }
+  
+  .formulario .form-group{
+    margin-top: 20px;
+    padding: 10px;
+    width: 350px;
+  }
+  
+  /* footer */
+
+  .footer{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer .container {
+  background-color: rgb(39, 39, 39);
+}
+
+.footer .container .footer-links {
+  margin-top: 20px;
+  
+}
+.footer .container .footer-row .footer-links h4 {
+  display: inline-block;
+  font-size: 3em;
+  color: rgb(255, 255, 255);
+  margin-bottom: 10px;
+  border-bottom: 4px solid #ff0000;
+  padding-bottom: 10px;
+}
+.footer .container .footer-row .footer-links ul li a {
+  display: flex;
+  justify-content: center;
+  font-size: 15px;
+  text-decoration: none;
+  text-align: center;
+  margin: 20px;
+  color: rgb(135, 135, 135);
+  transition: all 0.3s ease;
+}
+.footer .container .footer-row .footer-links ul li a:hover {
+  display: flex;
+  color: rgb(255, 0, 0);
+  padding-left: 10px;
+}
+
+.footer .container .footer-row .footer-links .social-link a {
+  display: inline-block;
+  min-height: 40px;
+  width: 40px;
+  background-color: rgb(55, 55, 55);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #FFFFFF;
+  transition: all 0.5s ease;
+}
+.footer .container .footer-row .footer-links .social-link a:hover {
+  background-color: red;
+}
+}
+
+/* mq desktop */
+@media (min-width: 1024px) {
+
+
+  /* estilo index */
+  
+  .main1 .banner {
+    height: 1vh;
+  } 
+  .main1 .bannerh1 {
+    margin-top: 200px;
+    font-size: 9em;
+    text-decoration: underline;
+  }
+  .main1 .banner .Asesoramiento{
+    text-align: center;
+    font-size: 3em;
+    margin-top: 50px;
+  }
+  .main1 .banner h3{
+    text-align: center;
+    margin-top: 40px;
+    font-size: 2em;
+    border-radius: 30px;
+  }
+
+  .main1 .banner .boton a {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin-top: 60px;
+    padding: 20px;
+    font-size: 1.5em;
+  }
+
+  /* estilos sobre mi */
+
+  .main{
+    height: 1vh;
+    max-width: 1000px;
+    min-width:320px;
+  }
+  
+  .main .contenedor1 .titulo h1{
     margin-top: 20px;
     text-align: center;
+    font-size: 3em;
+  }
+  .main .contenedor1 .info h4{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1.5em;
+    
+  }
+  .main .contenedor1 .info p {
+    text-align: center;
+    font-size: 1.2em;
+    margin-top: 20px;
+  }
+  
+  .main .contenedor1 .contenedorsobremi img{
+    margin-top: 70px;
+    width: 100%;
+    border-radius: 100px;
+  }
+  
+  #frame{
+    margin-top: 100px;
+    width: 100%;
+  }
+
+  /* servicios */
+
+  .container2{
+    height: 280vh;
+  }
+  
+  .container2 .titulo2 h1{
+    text-align: center;
     font-size: 2.5em;
+    margin-top: 10px;
+  }
+  .container2 .subtitulo {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 1em;
+  }
+  
+  .container2 .info2 h2{
+    text-decoration: underline;
+    text-align: center;
+    margin-bottom: 30px;
+    
+  }
+  .form ul li{
+    margin-top: 40px;
+  }
+  
+  .form img{
+    width: 100%;
+  }
+
+  /* precio */
+
+  .main2{
+    height: 70vh;
+  }
+  
+  .main2 .contenedor {
+    display: grid;
+    grid-template-columns: repeat(4);
+  }
+  .main2 .contenedor .titulo3 h1{
+    text-align: center;
+    font-size: 2.5em;
+    margin-top: 20px;
+  }
+  
+  .main2 .contenedor .container .columna {
+    border: 4px solid rgb(255, 255, 255);
+    padding: 1.5em;
+    margin-top: 40px;
+    border-radius: 30px;
+  }
+  .main2 .contenedor .container .columna h2 {
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+    border-bottom: 4px solid rgb(255, 0, 0);
+    margin-bottom: 10px;
+  }
+  .main2 .contenedor .container .columna .Precio {
+    text-align: center;
+    padding: 20px;
+    font-size: 2em;
+    margin-bottom: 1.5px;
+  }
+  .main2 .contenedor .container .columna ul {
+    list-style: none;
+    text-align: center;
+    gap: 20px;
+  }
+  .main2 .contenedor .container .columna ul li {
+    margin: 5px;
+    margin-top: 10px;
+    font-size: 1.2em;
+  }
+  .main2 .contenedor .container .columna .botonprecio {
+    display: flex;
+    justify-content: center;
+  }
+  .contenedor .container .columna .botonprecio a {
+    margin-top: 20px;
+    border: 4px solid rgb(255, 0, 0);
+    padding: 10px 40px;
+    box-shadow: 2px 3px rgb(0, 0, 0);
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    background-color: #2b2b2b;
+    text-decoration: none;
+  }
+
+  /* contactanos */
+
+  .maincontacto{
+    height: 0vh;
+  }
+  
+  .formulario .mb-4{
+    font-size: 3em;
+    margin-top: 30px;
+    text-align: center;
+  }
+  
+  .formulario .form-group{
+    margin-top: 20px;
+    padding: 10px;
+    margin: 20px;
+    width: 500px;
   }
 
   /* footer */
 
-  footer{
-    position: relative;
-    left: 0;
-    bottom: 0;
-    margin-top: 80%;
+  .footer{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .footer .container {
+    background-color: rgb(39, 39, 39);
+  }
+  
+  .footer .container .footer-links {
+    margin-top: 20px;
+    
+  }
+  .footer .container .footer-row .footer-links h4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 4em;
+    color: rgb(255, 255, 255);
+    margin-bottom: 10px;
+    border-bottom: 4px solid #ff0000;
+    padding-bottom: 10px;
+  }
+  .footer .container .footer-row .footer-links ul li a {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    font-size: 15px;
+    text-decoration: none;
+    color: rgb(135, 135, 135);
+    transition: all 0.3s ease;
+  }
+  .footer .container .footer-row .footer-links ul li a:hover {
+    display: flex;
+    color: rgb(255, 0, 0);
+    padding-left: 10px;
+  }
+  
+  .footer .container .footer-row .footer-links .social-link a {
+    min-height: 40px;
+    width: 100%;
+    background-color: rgb(55, 55, 55);
+    margin: 0 10px 10px 0;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #FFFFFF;
+    transition: all 0.5s ease;
+  }
+  .footer .container .footer-row .footer-links .social-link a:hover {
+    background-color: red;
   }
 
 }
+
+
 @media (max-width: 991px) {
   .footer-row {
     text-align: center;
@@ -553,5 +815,301 @@ body {
   margin: 10px;
   padding: 10px;
 }
+
+/* footer */
+
+.footer {
+  background-color: rgb(29, 29, 29);
+  margin-top: 170%;
+  width: 100%;
+}
+
+.footer-links {
+  padding: 85px;
+}
+.footer-links h4 {
+  text-align: center;
+  font-size: 1.2em;
+  color: white;
+  margin-bottom: 20px;
+  font-weight: 500;
+  border-bottom: 2px solid #ff0000;
+  padding-bottom: 10px;
+}
+.footer-links ul li a {
+  margin: 10px;
+  text-align: center;
+  font-size: 12px;
+  text-decoration: none;
+  color: rgb(166, 166, 166);
+  transition: all 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+  color: white;
+  padding-left: 6px;
+}
+
+.social-link a {
+  display: inline-block;
+  min-height: 40px;
+  width: 40px;
+  background-color: rgb(55, 55, 55);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #FFFFFF;
+  transition: all 0.5s ease;
+}
+.social-link a:hover {
+  background-color: red;
+}
+
+@media (min-width: 1200px){
+
+/* INDEX */
+
+.main1 .banner {
+  height: 0vh;
+} 
+.main1 .bannerh1 {
+  margin-top: 200px;
+  font-size: 9em;
+  text-decoration: underline;
+}
+.main1 .banner .Asesoramiento{
+  text-align: center;
+  font-size: 3em;
+  margin-top: 50px;
+}
+.main1 .banner h3{
+  text-align: center;
+  margin-top: 40px;
+  font-size: 2em;
+  border-radius: 30px;
+}
+
+.main1 .banner .boton a {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  margin-top: 60px;
+  padding: 20px;
+  font-size: 1.5em;
+}
+
+/* SOBRE MI */
+
+.main{
+  height: 1vh;
+  max-width: 1920px;
+  min-width:320px;
+}
+
+.main .contenedor1 .titulo h1{
+  margin-top: 30px;
+  text-align: center;
+  font-size: 3em;
+}
+.main .contenedor1 .info h4{
+  margin-top: 50px;
+  text-align: center;
+  font-size: 1.5em;
+  
+}
+.main .contenedor1 .info p {
+  text-align: center;
+  font-size: 1.2em;
+  margin-top: 70px;
+}
+
+.contenedor1 .contenedorsobremi{
+  width: 70%;
+  margin: 250px;
+}
+
+#frame{
+  margin-top: 100px;
+  width: 100%;
+}
+
+/* SERVICIOS */
+
+.container2{
+  height: 100vh;
+}
+
+.container2 .titulo2 h1{
+  text-align: center;
+  font-size: 2.5em;
+  margin-top: 10px;
+}
+.container2 .subtitulo {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 1em;
+}
+
+.container2 .info2 h2{
+  text-decoration: underline;
+  text-align: center;
+  margin-bottom: 30px;
+  
+}
+
+.form{
+  display: flex;
+  justify-content: center;
+}
+
+.form ul li{
+  text-align: center;
+  margin-top: 40px;
+}
+
+.form .infoimg{
+  width: 100%;
+}
+
+/* PRECIO */
+
+.contenedor{
+  height: 1vh;
+}
+
+.main2 .contenedor .container {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 50px;
+}
+
+.main2 .contenedor .titulo3{
+  text-align: center;
+  font-size: 1.5em;
+  margin-top: 20px;
+}
+
+.main2 .contenedor .container .columna {
+  border: 4px solid rgb(255, 255, 255);
+  padding: 1.5em;
+  margin-top: 40px;
+  border-radius: 30px;
+}
+.main2 .contenedor .container .columna h2 {
+  padding: 10px;
+  text-align: center;
+  font-size: 1.5rem;
+  border-bottom: 4px solid rgb(255, 0, 0);
+  margin-bottom: 10px;
+}
+.main2 .contenedor .container .columna .Precio {
+  text-align: center;
+  padding: 20px;
+  font-size: 2em;
+  margin-bottom: 1.5px;
+}
+.main2 .contenedor .container .columna ul {
+  list-style: none;
+  text-align: center;
+  gap: 20px;
+}
+.main2 .contenedor .container .columna ul li {
+  margin: 10px;
+  margin-top: 25px;
+  font-size: 1.2em;
+}
+.main2 .contenedor .container .columna .botonprecio {
+  display: flex;
+  justify-content: center;
+}
+.contenedor .container .columna .botonprecio a {
+  margin-top: 20px;
+  border: 4px solid rgb(255, 0, 0);
+  padding: 10px 40px;
+  box-shadow: 2px 3px rgb(0, 0, 0);
+  border-radius: 10px;
+  color: rgb(255, 255, 255);
+  background-color: #2b2b2b;
+  text-decoration: none;
+}
+
+/* CONTACTANOS */
+
+.maincontacto{
+  height: 0vh;
+}
+
+.formulario .mb-4{
+  font-size: 3em;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.formulario .form-group{
+  margin-top: 20px;
+  padding: 10px;
+  margin: 20px;
+  width: 600px;
+}
+
+
+/* FOOTER */
+
+.footer{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer .container {
+  background-color: rgb(39, 39, 39);
+}
+
+.footer .container .footer-links {
+  margin-top: 20px;
+  
+}
+.footer .container .footer-row .footer-links h4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 4em;
+  color: rgb(255, 255, 255);
+  margin-bottom: 10px;
+  border-bottom: 4px solid #ff0000;
+  padding-bottom: 10px;
+}
+.footer .container .footer-row .footer-links ul li a {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  font-size: 15px;
+  text-decoration: none;
+  color: rgb(135, 135, 135);
+  transition: all 0.3s ease;
+}
+.footer .container .footer-row .footer-links ul li a:hover {
+  display: flex;
+  color: rgb(255, 0, 0);
+  padding-left: 10px;
+}
+
+.footer .container .footer-row .footer-links .social-link a {
+  min-height: 40px;
+  width: 100%;
+  background-color: rgb(55, 55, 55);
+  margin: 0 10px 10px 0;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #FFFFFF;
+  transition: all 0.5s ease;
+}
+.footer .container .footer-row .footer-links .social-link a:hover {
+  background-color: red;
+}
+
+}
+
 
 /*# sourceMappingURL=style.css.map */
